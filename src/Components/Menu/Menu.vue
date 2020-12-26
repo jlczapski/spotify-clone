@@ -1,9 +1,11 @@
 <template>
     <div class="menu-wrapper w-1/6 h-screen bg-black-900">
         <Links />
-        <Library />
-        <Playlists />
-        <div class="spacer w-full bg-white mt-2"></div>
+        <div class="overflow-scroll h-80">
+            <Library />
+            <Playlists />
+        </div>
+        <NewPlaylist />
     </div>
 </template>
 
@@ -11,6 +13,7 @@
 import Links from './Links.vue';
 import Library from './Library.vue';
 import Playlists from './Playlists.vue';
+import NewPlaylist from './NewPlaylist.vue';
 
 export default {
     name: 'Menu',
@@ -18,13 +21,7 @@ export default {
         Links,
         Library,
         Playlists,
+        NewPlaylist,
     },
 };
 </script>
-
-<style scoped>
-    .spacer {
-        height: 0.5px;
-        opacity: 0.15;
-    }
-</style>

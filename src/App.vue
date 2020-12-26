@@ -1,10 +1,11 @@
 <template>
     <div id="app">
-        <div class="flex flex-wrap font-proxima">
+        <div class="flex flex-wrap font-circular">
             <Menu />
             <Listings />
             <Social />
         </div>
+        <Controls />
     </div>
 </template>
 
@@ -12,6 +13,7 @@
 import Menu from './Components/Menu/Menu.vue';
 import Listings from './Components/Listings/Listings.vue';
 import Social from './Components/Social/Social.vue';
+import Controls from './Components/Controls/Controls.vue';
 
 export default {
     name: 'App',
@@ -19,6 +21,7 @@ export default {
         Menu,
         Listings,
         Social,
+        Controls,
     },
     created() {
         document.title = 'Spotify UI Clone';

@@ -1,8 +1,8 @@
 <template>
-    <div class="modal bg-black-800 rounded-lg px-10 py-2" v-if="modalOpen">
+    <div class="modal absolute right-4 top-14 bg-grey-900 shadow-3xl rounded-lg px-10 py-2" v-if="modalOpen">
         <ul>
             <li
-                class="text-grey-900 text-sm tracking-wide my-3"
+                class="text-grey-600 text-sm tracking-wide my-3"
                 v-for="(link, i) in links"
                 :key="`link-${i}`"
             >
@@ -30,12 +30,3 @@ export default {
     props: ['modalOpen'],
 };
 </script>
-
-<style scoped>
-    .modal {
-        box-shadow: 1px 3px 12px 4px rgba(0, 0, 0, 0.6);
-        position: absolute;
-        right: 2%;
-        top: 10%;
-    }
-</style>

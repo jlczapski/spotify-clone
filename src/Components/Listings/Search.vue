@@ -1,55 +1,25 @@
 <template>
 	<div class="flex items-center">
-		<div class="input-prepend flex items-center justify-center w-9 h-7 bg-white">
-			<svg
-				xmlns="http://www.w3.org/2000/svg"
-				class="icon icon-tabler icon-tabler-search"
-				width="44"
-				height="44"
-				viewBox="0 0 24 24"
-				stroke-width="1.5"
-				stroke="#9e9e9e"
-				fill="none"
-				stroke-linecap="round"
-				stroke-linejoin="round"
-			>
-				<path stroke="none" d="M0 0h24v24H0z" fill="none" />
-				<circle cx="10" cy="10" r="7" />
-				<line x1="21" y1="21" x2="15" y2="15" />
-			</svg>
+		<div class="input-prepend flex items-center justify-center w-7 h-7 bg-white rounded-3xl rounded-r-none">
+            <IconSearch class="w-4 h-4" />
 		</div>
 		<input
 			type="text"
 			name="search"
 			id="search"
-			class="mx-0 my-4 text-sm py-1 tracking-wide flex-1"
+			class="mx-0 my-4 text-sm py-1 tracking-wide flex-1 rounded-3xl rounded-l-none placeholder-black-900"
 			placeholder="Search"
 		/>
 	</div>
 </template>
 
 <script>
+import IconSearch from '../../../public/img/icons/search.svg';
+
 export default {
     name: 'Search',
+    components: {
+        IconSearch,
+    },
 };
 </script>
-
-<style scoped>
-.input-prepend {
-    border-radius: 20px 0 0 20px;
-}
-
-input {
-    border-radius: 0 20px 20px 0;
-}
-
-input::placeholder {
-	color: #000000;
-}
-
-svg {
-    width: 1.2rem;
-    height: 1.2rem;
-}
-
-</style>

@@ -12,7 +12,9 @@
             </div>
         </div>
         <div class="px-8">
-            <h1 class="text-5xl text-white font-bold mt-16">Home</h1>
+            <h1 class="text-5xl text-white font-bold mt-16">
+                {{ title }}
+            </h1>
         </div>
         <Modal :modalOpen="modalOpen" />
     </div>
@@ -35,6 +37,7 @@ export default {
     data() {
         return {
             modalOpen: false,
+            title: 'Home',
         };
     },
     methods: {

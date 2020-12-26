@@ -2,8 +2,8 @@
 @tailwind components;
 
 @font-face {
-    font-family: 'Proxima Nova';
-    src: local('Proxima Nova'), url('../../../public/fonts/ProximaNovaRegular.otf') format('otf')
+    font-family: 'Circular';
+    src: local('Circular'), url('../../../public/fonts/CircularStdMedium.woff') format('woff')
 }
 
 @tailwind utilities;
